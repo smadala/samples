@@ -1,2 +1,2 @@
 # samples
-Quick (personal) Samples for doing some manual testing.
+Quick (personal) Samples for doing manual testing.
