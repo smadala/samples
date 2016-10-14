@@ -67,7 +67,7 @@
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
-    <ProjectReference Include="..\fakes\ClassLibrary1.csproj">
+    <ProjectReference Include="..\ClassLibrary1\ClassLibrary1.csproj">
       <Project>{f2870759-86a9-4db8-a804-447ae23103e3}</Project>
       <Name>ClassLibrary1</Name>
     </ProjectReference>
