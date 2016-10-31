@@ -4,7 +4,7 @@ using Microsoft.VisualStudio.TestTools.UnitTesting;
 namespace UnitTestinProgress
 {
     [TestClass]
-	public class MSTest_Slow
+	public class MSTestClass5
     {
 <#
 	int passedTests = 50;
@@ -14,7 +14,7 @@ namespace UnitTestinProgress
 	int waitTime = (int)(timePerTest*1000);
 
 	int count = 1;
-	String testmethodprefix = "MSTest_P1_";
+	String testmethodprefix = "MSTest_P5_";
 
 
 #>

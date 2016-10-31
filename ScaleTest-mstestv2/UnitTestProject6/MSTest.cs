@@ -4,306 +4,306 @@ using Microsoft.VisualStudio.TestTools.UnitTesting;
 namespace UnitTestinProgress
 {
     [TestClass]
-	public class MSTest_Slow
+	public class MSTestClass6
     {
 
 		#region PassingTests
 		[TestMethod]
-		public void MSTest_P1_01()
+		public void MSTest_P6_01()
 		{
 			//System.Threading.Thread.Sleep(1500);
 			Assert.AreEqual(1, 1);
 		}
 		[TestMethod]
-		public void MSTest_P1_02()
+		public void MSTest_P6_02()
 		{
 			//System.Threading.Thread.Sleep(1500);
 			Assert.AreEqual(1, 1);
 		}
 		[TestMethod]
-		public void MSTest_P1_03()
+		public void MSTest_P6_03()
 		{
 			//System.Threading.Thread.Sleep(1500);
 			Assert.AreEqual(1, 1);
 		}
 		[TestMethod]
-		public void MSTest_P1_04()
+		public void MSTest_P6_04()
 		{
 			//System.Threading.Thread.Sleep(1500);
 			Assert.AreEqual(1, 1);
 		}
 		[TestMethod]
-		public void MSTest_P1_05()
+		public void MSTest_P6_05()
 		{
 			//System.Threading.Thread.Sleep(1500);
 			Assert.AreEqual(1, 1);
 		}
 		[TestMethod]
-		public void MSTest_P1_06()
+		public void MSTest_P6_06()
 		{
 			//System.Threading.Thread.Sleep(1500);
 			Assert.AreEqual(1, 1);
 		}
 		[TestMethod]
-		public void MSTest_P1_07()
+		public void MSTest_P6_07()
 		{
 			//System.Threading.Thread.Sleep(1500);
 			Assert.AreEqual(1, 1);
 		}
 		[TestMethod]
-		public void MSTest_P1_08()
+		public void MSTest_P6_08()
 		{
 			//System.Threading.Thread.Sleep(1500);
 			Assert.AreEqual(1, 1);
 		}
 		[TestMethod]
-		public void MSTest_P1_09()
+		public void MSTest_P6_09()
 		{
 			//System.Threading.Thread.Sleep(1500);
 			Assert.AreEqual(1, 1);
 		}
 		[TestMethod]
-		public void MSTest_P1_10()
+		public void MSTest_P6_10()
 		{
 			//System.Threading.Thread.Sleep(1500);
 			Assert.AreEqual(1, 1);
 		}
 		[TestMethod]
-		public void MSTest_P1_11()
+		public void MSTest_P6_11()
 		{
 			//System.Threading.Thread.Sleep(1500);
 			Assert.AreEqual(1, 1);
 		}
 		[TestMethod]
-		public void MSTest_P1_12()
+		public void MSTest_P6_12()
 		{
 			//System.Threading.Thread.Sleep(1500);
 			Assert.AreEqual(1, 1);
 		}
 		[TestMethod]
-		public void MSTest_P1_13()
+		public void MSTest_P6_13()
 		{
 			//System.Threading.Thread.Sleep(1500);
 			Assert.AreEqual(1, 1);
 		}
 		[TestMethod]
-		public void MSTest_P1_14()
+		public void MSTest_P6_14()
 		{
 			//System.Threading.Thread.Sleep(1500);
 			Assert.AreEqual(1, 1);
 		}
 		[TestMethod]
-		public void MSTest_P1_15()
+		public void MSTest_P6_15()
 		{
 			//System.Threading.Thread.Sleep(1500);
 			Assert.AreEqual(1, 1);
 		}
 		[TestMethod]
-		public void MSTest_P1_16()
+		public void MSTest_P6_16()
 		{
 			//System.Threading.Thread.Sleep(1500);
 			Assert.AreEqual(1, 1);
 		}
 		[TestMethod]
-		public void MSTest_P1_17()
+		public void MSTest_P6_17()
 		{
 			//System.Threading.Thread.Sleep(1500);
 			Assert.AreEqual(1, 1);
 		}
 		[TestMethod]
-		public void MSTest_P1_18()
+		public void MSTest_P6_18()
 		{
 			//System.Threading.Thread.Sleep(1500);
 			Assert.AreEqual(1, 1);
 		}
 		[TestMethod]
-		public void MSTest_P1_19()
+		public void MSTest_P6_19()
 		{
 			//System.Threading.Thread.Sleep(1500);
 			Assert.AreEqual(1, 1);
 		}
 		[TestMethod]
-		public void MSTest_P1_20()
+		public void MSTest_P6_20()
 		{
 			//System.Threading.Thread.Sleep(1500);
 			Assert.AreEqual(1, 1);
 		}
 		[TestMethod]
-		public void MSTest_P1_21()
+		public void MSTest_P6_21()
 		{
 			//System.Threading.Thread.Sleep(1500);
 			Assert.AreEqual(1, 1);
 		}
 		[TestMethod]
-		public void MSTest_P1_22()
+		public void MSTest_P6_22()
 		{
 			//System.Threading.Thread.Sleep(1500);
 			Assert.AreEqual(1, 1);
 		}
 		[TestMethod]
-		public void MSTest_P1_23()
+		public void MSTest_P6_23()
 		{
 			//System.Threading.Thread.Sleep(1500);
 			Assert.AreEqual(1, 1);
 		}
 		[TestMethod]
-		public void MSTest_P1_24()
+		public void MSTest_P6_24()
 		{
 			//System.Threading.Thread.Sleep(1500);
 			Assert.AreEqual(1, 1);
 		}
 		[TestMethod]
-		public void MSTest_P1_25()
+		public void MSTest_P6_25()
 		{
 			//System.Threading.Thread.Sleep(1500);
 			Assert.AreEqual(1, 1);
 		}
 		[TestMethod]
-		public void MSTest_P1_26()
+		public void MSTest_P6_26()
 		{
 			//System.Threading.Thread.Sleep(1500);
 			Assert.AreEqual(1, 1);
 		}
 		[TestMethod]
-		public void MSTest_P1_27()
+		public void MSTest_P6_27()
 		{
 			//System.Threading.Thread.Sleep(1500);
 			Assert.AreEqual(1, 1);
 		}
 		[TestMethod]
-		public void MSTest_P1_28()
+		public void MSTest_P6_28()
 		{
 			//System.Threading.Thread.Sleep(1500);
 			Assert.AreEqual(1, 1);
 		}
 		[TestMethod]
-		public void MSTest_P1_29()
+		public void MSTest_P6_29()
 		{
 			//System.Threading.Thread.Sleep(1500);
 			Assert.AreEqual(1, 1);
 		}
 		[TestMethod]
-		public void MSTest_P1_30()
+		public void MSTest_P6_30()
 		{
 			//System.Threading.Thread.Sleep(1500);
 			Assert.AreEqual(1, 1);
 		}
 		[TestMethod]
-		public void MSTest_P1_31()
+		public void MSTest_P6_31()
 		{
 			//System.Threading.Thread.Sleep(1500);
 			Assert.AreEqual(1, 1);
 		}
 		[TestMethod]
-		public void MSTest_P1_32()
+		public void MSTest_P6_32()
 		{
 			//System.Threading.Thread.Sleep(1500);
 			Assert.AreEqual(1, 1);
 		}
 		[TestMethod]
-		public void MSTest_P1_33()
+		public void MSTest_P6_33()
 		{
 			//System.Threading.Thread.Sleep(1500);
 			Assert.AreEqual(1, 1);
 		}
 		[TestMethod]
-		public void MSTest_P1_34()
+		public void MSTest_P6_34()
 		{
 			//System.Threading.Thread.Sleep(1500);
 			Assert.AreEqual(1, 1);
 		}
 		[TestMethod]
-		public void MSTest_P1_35()
+		public void MSTest_P6_35()
 		{
 			//System.Threading.Thread.Sleep(1500);
 			Assert.AreEqual(1, 1);
 		}
 		[TestMethod]
-		public void MSTest_P1_36()
+		public void MSTest_P6_36()
 		{
 			//System.Threading.Thread.Sleep(1500);
 			Assert.AreEqual(1, 1);
 		}
 		[TestMethod]
-		public void MSTest_P1_37()
+		public void MSTest_P6_37()
 		{
 			//System.Threading.Thread.Sleep(1500);
 			Assert.AreEqual(1, 1);
 		}
 		[TestMethod]
-		public void MSTest_P1_38()
+		public void MSTest_P6_38()
 		{
 			//System.Threading.Thread.Sleep(1500);
 			Assert.AreEqual(1, 1);
 		}
 		[TestMethod]
-		public void MSTest_P1_39()
+		public void MSTest_P6_39()
 		{
 			//System.Threading.Thread.Sleep(1500);
 			Assert.AreEqual(1, 1);
 		}
 		[TestMethod]
-		public void MSTest_P1_40()
+		public void MSTest_P6_40()
 		{
 			//System.Threading.Thread.Sleep(1500);
 			Assert.AreEqual(1, 1);
 		}
 		[TestMethod]
-		public void MSTest_P1_41()
+		public void MSTest_P6_41()
 		{
 			//System.Threading.Thread.Sleep(1500);
 			Assert.AreEqual(1, 1);
 		}
 		[TestMethod]
-		public void MSTest_P1_42()
+		public void MSTest_P6_42()
 		{
 			//System.Threading.Thread.Sleep(1500);
 			Assert.AreEqual(1, 1);
 		}
 		[TestMethod]
-		public void MSTest_P1_43()
+		public void MSTest_P6_43()
 		{
 			//System.Threading.Thread.Sleep(1500);
 			Assert.AreEqual(1, 1);
 		}
 		[TestMethod]
-		public void MSTest_P1_44()
+		public void MSTest_P6_44()
 		{
 			//System.Threading.Thread.Sleep(1500);
 			Assert.AreEqual(1, 1);
 		}
 		[TestMethod]
-		public void MSTest_P1_45()
+		public void MSTest_P6_45()
 		{
 			//System.Threading.Thread.Sleep(1500);
 			Assert.AreEqual(1, 1);
 		}
 		[TestMethod]
-		public void MSTest_P1_46()
+		public void MSTest_P6_46()
 		{
 			//System.Threading.Thread.Sleep(1500);
 			Assert.AreEqual(1, 1);
 		}
 		[TestMethod]
-		public void MSTest_P1_47()
+		public void MSTest_P6_47()
 		{
 			//System.Threading.Thread.Sleep(1500);
 			Assert.AreEqual(1, 1);
 		}
 		[TestMethod]
-		public void MSTest_P1_48()
+		public void MSTest_P6_48()
 		{
 			//System.Threading.Thread.Sleep(1500);
 			Assert.AreEqual(1, 1);
 		}
 		[TestMethod]
-		public void MSTest_P1_49()
+		public void MSTest_P6_49()
 		{
 			//System.Threading.Thread.Sleep(1500);
 			Assert.AreEqual(1, 1);
 		}
 		[TestMethod]
-		public void MSTest_P1_50()
+		public void MSTest_P6_50()
 		{
 			//System.Threading.Thread.Sleep(1500);
 			Assert.AreEqual(1, 1);
