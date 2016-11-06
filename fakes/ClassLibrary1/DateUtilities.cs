@@ -8,9 +8,9 @@ namespace ClassLibrary1
 {
     public class DateUtilities
     {
-        public int GetCurrentYear()
+        public static bool IsCurrentYearALeapYear()
         {
-            return DateTime.Now.Year;
+            return DateTime.Now.Year % 4 == 0;
         }
     }
 }
