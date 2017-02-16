@@ -1,0 +1,22 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 15
+VisualStudioVersion = 15.0.26215.0
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "XunitSample-netcore", "XunitSample-netcore\XunitSample-netcore.csproj", "{5B681D70-A757-42A7-9E06-C70F4C4B78CF}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{5B681D70-A757-42A7-9E06-C70F4C4B78CF}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{5B681D70-A757-42A7-9E06-C70F4C4B78CF}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{5B681D70-A757-42A7-9E06-C70F4C4B78CF}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{5B681D70-A757-42A7-9E06-C70F4C4B78CF}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal
