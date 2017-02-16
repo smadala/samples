@@ -1,0 +1,13 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Rows>
+  <Row>
+    <op1>10</op1>
+    <op2>20</op2>
+    <res>30</res>
+  </Row>
+  <Row>
+    <op1>10</op1>
+    <op2>-10</op2>
+    <res>0</res>
+  </Row>
+</Rows>
