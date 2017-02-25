@@ -13,7 +13,16 @@ namespace NunitSample
         [Test]
         public void TestMethod1()
         {
+            Assert.AreEqual(new ClassLibrary1.Class1().foo(4), 8);
+            Assert.AreEqual(new ClassLibrary1.Class1().foo(11), 33);
 
+        }
+
+        [Test]
+        public void TestMethod2()
+        {
+            Assert.AreEqual(new ClassLibrary1.Class1().bar(3), 9);
+            Assert.AreEqual(new ClassLibrary1.Class1().bar(11), 44);
         }
 
         [TestCase(12, 3, 4)]
