@@ -9,7 +9,7 @@ namespace MSTestTests
         [TestMethod]
         public void CheckCurrentYear()
         {
-            Assert.IsTrue(HelloWorld.Common.YearUtils.IsCurrentYear(new DateTime(2016, 1, 1)));
+            Assert.IsTrue(HelloWorld.Common.YearUtils.IsCurrentYear(new DateTime(2017, 1, 1)));
         }
 
         [TestMethod]
