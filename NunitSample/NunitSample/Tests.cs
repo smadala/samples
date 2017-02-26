@@ -33,5 +33,15 @@ namespace NunitSample
         {
 
         }
+
+        [TestFixture]
+        public class InnerClass
+        {
+            [Test]
+            public void InnerTestMethod()
+            {
+
+            }
+        }
     }
 }
