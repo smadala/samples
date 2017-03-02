@@ -13,6 +13,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Net2UnitTest", "Net2UnitTes
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Net35UnitTest", "Net35UnitTest\Net35UnitTest.csproj", "{957F8654-DCCA-4EBC-9BEB-63D2F5B514BD}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "NetCoreApp10Test", "NetCoreApp10Test\NetCoreApp10Test.csproj", "{F84B0463-369C-4CE7-B657-A789D7E2998E}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -39,6 +41,10 @@ Global
 		{957F8654-DCCA-4EBC-9BEB-63D2F5B514BD}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{957F8654-DCCA-4EBC-9BEB-63D2F5B514BD}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{957F8654-DCCA-4EBC-9BEB-63D2F5B514BD}.Release|Any CPU.Build.0 = Release|Any CPU
+		{F84B0463-369C-4CE7-B657-A789D7E2998E}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{F84B0463-369C-4CE7-B657-A789D7E2998E}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{F84B0463-369C-4CE7-B657-A789D7E2998E}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{F84B0463-369C-4CE7-B657-A789D7E2998E}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
