@@ -9,5 +9,16 @@ namespace XUnitSample
         public void TestMethod1()
         {
         }
+
+        [Fact]
+        public void TestMethod2()
+        {
+        }
+
+        [Fact]
+        public void TestMethod3()
+        {
+
+        }
     }
 }
