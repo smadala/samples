@@ -4,7 +4,7 @@ using Microsoft.VisualStudio.TestTools.UnitTesting;
 namespace UnitTestinProgress
 {
     [TestClass]
-	public class MSTestClass1
+	public class MSTestClass16
     {
 
 		#region PassingTests

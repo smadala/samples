@@ -4,7 +4,7 @@ using Microsoft.VisualStudio.TestTools.UnitTesting;
 namespace UnitTestinProgress
 {
     [TestClass]
-	public class MSTestClass1
+	public class MSTestClass20
     {
 <#
 	int passedTests = 1000;

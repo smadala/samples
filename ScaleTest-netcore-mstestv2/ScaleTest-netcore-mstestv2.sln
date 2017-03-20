@@ -1,10 +1,8 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio 15
-VisualStudioVersion = 15.0.26214.0
+VisualStudioVersion = 15.0.26228.9
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ScaleTest-netcore-mstestv2", "ScaleTest-netcore-mstestv2\ScaleTest-netcore-mstestv2.csproj", "{7B6A2D9C-7634-4355-9995-D89251A1E28C}"
-EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "UnitTestProject1", "UnitTestProject1\UnitTestProject1.csproj", "{8694455F-C56C-42B5-BC50-EF3096A425AF}"
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "UnitTestProject2", "UnitTestProject2\UnitTestProject2.csproj", "{F82690ED-C3BD-4718-BA0B-C55D5FA3913E}"
@@ -51,10 +49,6 @@ Global
 		Release|Any CPU = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(ProjectConfigurationPlatforms) = postSolution
-		{7B6A2D9C-7634-4355-9995-D89251A1E28C}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{7B6A2D9C-7634-4355-9995-D89251A1E28C}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{7B6A2D9C-7634-4355-9995-D89251A1E28C}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{7B6A2D9C-7634-4355-9995-D89251A1E28C}.Release|Any CPU.Build.0 = Release|Any CPU
 		{8694455F-C56C-42B5-BC50-EF3096A425AF}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
 		{8694455F-C56C-42B5-BC50-EF3096A425AF}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{8694455F-C56C-42B5-BC50-EF3096A425AF}.Release|Any CPU.ActiveCfg = Release|Any CPU
