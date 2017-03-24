@@ -12,13 +12,14 @@ namespace Xunit21Sample
         [Fact]
         public void TestMethod1()
         {
-
+            // throw new ArgumentException();
         }
 
         [Fact]
-        public void TestMethod2()
+        public async Task TestMethod2()
         {
-
+            await Task.Delay(1);
+            // throw new ArgumentException();
         }
     }
 }
