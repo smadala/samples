@@ -1,4 +1,5 @@
 using System;
+using System.Threading.Tasks;
 using Xunit;
 
 namespace XUnitNetCoreSample
@@ -8,6 +9,7 @@ namespace XUnitNetCoreSample
         [Fact]
         public void Test1()
         {
+            Task.Delay(10 * 1000).Wait();
         }
     }
 }
