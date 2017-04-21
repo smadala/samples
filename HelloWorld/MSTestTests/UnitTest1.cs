@@ -17,5 +17,22 @@ namespace MSTestTests
         {
             Assert.IsFalse(HelloWorld.Common.YearUtils.IsCurrentYear(new DateTime(2015, 1, 1)));
         }
+
+        [TestMethod]
+        public void TestThatFails()
+        {
+            this.Foo();
+        }
+
+        private void Foo()
+        {
+            this.Bar();
+        }
+
+        private void Bar()
+        {
+            throw new NotImplementedException();
+        }
     }
 }
+        
