@@ -1,5 +1,6 @@
 using System;
 using Microsoft.VisualStudio.TestTools.UnitTesting;
+using Microsoft.VisualStudio.TestTools.UnitTesting.Logging;
 
 namespace MSTestTests
 {
@@ -45,6 +46,12 @@ namespace MSTestTests
         public void TestMethodTextContextWriteLine()
         {
             this.TestContext.WriteLine("Hello There");
+        }
+
+        [TestMethod]
+        public void TestMethodLoggerLogMessage()
+        {
+            Logger.LogMessage("Hello from LogMessage");
         }
     }
 }
