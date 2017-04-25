@@ -10,5 +10,10 @@ namespace MultiTfUnitTestSample
         public void TestMethod46()
         {
         }
+
+        [TestMethod]
+        public void AnotherTestMethod46()
+        {
+        }
     }
 }

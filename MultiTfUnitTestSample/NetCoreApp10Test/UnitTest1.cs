@@ -10,5 +10,10 @@ namespace NetCoreApp10Test
         public void TestMethodCore11()
         {
         }
+
+        [TestMethod]
+        public void TestMethodCore12()
+        {
+        }
     }
 }
