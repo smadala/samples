@@ -6,6 +6,12 @@ namespace MSTestTests
     [TestClass]
     public class UnitTest1
     {
+        public TestContext TestContext
+        {
+            get;
+            set;
+        }
+
         [TestMethod]
         public void CheckCurrentYear()
         {
@@ -32,6 +38,13 @@ namespace MSTestTests
         private void Bar()
         {
             throw new NotImplementedException();
+        }
+
+
+        [TestMethod]
+        public void TestMethodTextContextWriteLine()
+        {
+            this.TestContext.WriteLine("Hello There");
         }
     }
 }
