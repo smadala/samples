@@ -53,6 +53,11 @@ namespace MSTestTests
         {
             Logger.LogMessage("Hello from LogMessage");
         }
+
+        [TestMethod]
+        public void TestWithLongNameeeeeeeeeeeeeeeeeeeeeeeeeeeee()
+        {
+        }
     }
 }
         
