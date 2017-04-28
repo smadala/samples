@@ -15,7 +15,13 @@ namespace MSTestTests
         [TestMethod]
         public void CheckLastYear()
         {
+
             Assert.IsFalse(HelloWorld.Common.YearUtils.IsCurrentYear(new DateTime(2015, 1, 1)));
+        }
+
+        [TestMethod]
+        public void LongTestNameeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeee()
+        {
         }
     }
 }
