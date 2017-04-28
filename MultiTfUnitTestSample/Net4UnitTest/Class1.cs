@@ -10,7 +10,7 @@ namespace Net4UnitTest
     public class Net4UnitTest
     {
         [TestMethod]
-        public void Foo()
+        public void TestMethod40()
         {
 
         }

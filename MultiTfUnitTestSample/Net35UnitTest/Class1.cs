@@ -9,7 +9,7 @@ namespace Net2UnitTest
     public class Net35UnitTest
     {
         [TestMethod]
-        public void Foo()
+        public void TestMethod35()
         {
 
         }

@@ -7,7 +7,12 @@ namespace MultiTfUnitTestSample
     public class Net46UnitTest1
     {
         [TestMethod]
-        public void TestMethod1()
+        public void TestMethod46()
+        {
+        }
+
+        [TestMethod]
+        public void AnotherTestMethod46()
         {
         }
     }

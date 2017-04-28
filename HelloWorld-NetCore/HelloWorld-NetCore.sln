@@ -1,9 +1,11 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio 15
-VisualStudioVersion = 15.0.26228.4
+VisualStudioVersion = 15.0.26424.1
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "HelloWorld-NetCore", "HelloWorld-NetCore\HelloWorld-NetCore.csproj", "{95D68E64-DF9A-4609-AC00-2ECD6B399F4E}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ClassLibrary1", "ClassLibrary1\ClassLibrary1.csproj", "{B05F9F23-5582-41B0-A8DB-4144B7CBBB1E}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -15,6 +17,10 @@ Global
 		{95D68E64-DF9A-4609-AC00-2ECD6B399F4E}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{95D68E64-DF9A-4609-AC00-2ECD6B399F4E}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{95D68E64-DF9A-4609-AC00-2ECD6B399F4E}.Release|Any CPU.Build.0 = Release|Any CPU
+		{B05F9F23-5582-41B0-A8DB-4144B7CBBB1E}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{B05F9F23-5582-41B0-A8DB-4144B7CBBB1E}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{B05F9F23-5582-41B0-A8DB-4144B7CBBB1E}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{B05F9F23-5582-41B0-A8DB-4144B7CBBB1E}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
