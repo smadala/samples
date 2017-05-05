@@ -8,6 +8,7 @@ namespace XUnitSample
         [Fact]
         public void TestMethod1()
         {
+            Assert.False(true);
         }
 
         [Fact]
