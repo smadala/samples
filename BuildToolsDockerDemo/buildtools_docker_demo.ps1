@@ -1,14 +1,12 @@
 
 
-#$ContainerId = "fb5ab8ed56a9"
-$ContainerId = "bb51fe78250cdab37b28dc5084c878d29e9fefc7079af45a98bf3fa729cf24fa"
 $VSTestConsolePath = "C:\BuildTools\Common7\IDE\Extensions\TestPlatform\vstest.console.exe"
 $TestAssembly = "c:\Docker\data\samples\BuildToolsDockerDemo\MSTestv2Project\bin\Debug\MSTestv2Project.dll"
 $HostResultsDirectory = "D:\docker\data\TestResults-3\"
 $ResultsDirectoryArg = "/ResultsDirectory:C:\docker\data\TestResults-3\"
 
 if(Test-Path $HostResultsDirectory){
-    Remove-Item -Force -Recurse -Verbose $HostResultsDirectory
+    Get-ChildItem -Recurse $HostResultsDirectory | %{Remove-Item -Force -Verbose -Recurse $_.FullName}
 }
 
 $numberOfIterations = 3
@@ -29,15 +27,6 @@ for($i=1; $i -le $numberOfIterations; $i++){
     Write-Host "Executing: docker exec -d $ContainerId $VSTestConsolePath $TestAssembly $ResultsDirectoryArg /logger:trx /Testcasefilter:priority=$i"
     docker exec -d $ContainerId $VSTestConsolePath $TestAssembly $ResultsDirectoryArg /logger:trx /Testcasefilter:priority=$i
 }
-
-
-#for($i=1; $i -le $numberOfIterations; $i++){
-  
-#    $ContainerId = $Containers[$i-1]
-#    $priority = $i
-#    Write-Host "Executing: docker exec -d $ContainerId $VSTestConsolePath $TestAssembly $ResultsDirectoryArg /logger:trx /Testcasefilter:priority=$priority"
-#    docker exec -d $ContainerId $VSTestConsolePath $TestAssembly $ResultsDirectoryArg /logger:trx /Testcasefilter:priority=$priority
-#}
 
 $CompletedJobs = 0
 while($numberOfIterations -ne $CompletedJobs)
