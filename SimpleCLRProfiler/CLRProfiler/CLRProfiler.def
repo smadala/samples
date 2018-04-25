@@ -1,0 +1,5 @@
+LIBRARY "CLRProfiler.dll"
+
+EXPORTS
+    DllCanUnloadNow PRIVATE
+    DllGetClassObject PRIVATE
