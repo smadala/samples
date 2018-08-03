@@ -1,0 +1,275 @@
+{
+    "options": [
+      {
+        "enabled": false,
+        "definition": {
+          "id": "5d58cc01-7c75-450c-be18-a388ddb129ec"
+        },
+        "inputs": {
+          "branchFilters": "[\"+refs/heads/*\"]",
+          "additionalFields": "{}"
+        }
+      },
+      {
+        "enabled": false,
+        "definition": {
+          "id": "a9db38f9-9fdc-478c-b0f9-464221e58316"
+        },
+        "inputs": {
+          "workItemType": "891514",
+          "assignToRequestor": "true",
+          "additionalFields": "{}"
+        }
+      }
+    ],
+    "variables": {
+      "system.debug": {
+        "value": "false",
+        "allowOverride": true
+      }
+    },
+    "retentionRules": [
+      {
+        "branches": [
+          "+refs/heads/*"
+        ],
+        "artifacts": [],
+        "artifactTypesToDelete": [
+          "FilePath",
+          "SymbolStore"
+        ],
+        "daysToKeep": 10,
+        "minimumToKeep": 1,
+        "deleteBuildRecord": true,
+        "deleteTestResults": true
+      }
+    ],
+    "properties": {},
+    "tags": [],
+    "_links": {
+      "self": {
+        "href": "https://samadala.visualstudio.com/010f8b6f-710e-4f98-acf7-023f9f9510b8/_apis/build/Definitions/6?revision=5"
+      },
+      "web": {
+        "href": "https://samadala.visualstudio.com/010f8b6f-710e-4f98-acf7-023f9f9510b8/_build/definition?definitionId=6"
+      },
+      "editor": {
+        "href": "https://samadala.visualstudio.com/010f8b6f-710e-4f98-acf7-023f9f9510b8/_build/designer?id=6&_a=edit-build-definition"
+      },
+      "badge": {
+        "href": "https://samadala.visualstudio.com/010f8b6f-710e-4f98-acf7-023f9f9510b8/_apis/build/status/6"
+      }
+    },
+    "comment": "Publish trx",
+    "jobAuthorizationScope": 1,
+    "jobTimeoutInMinutes": 60,
+    "jobCancelTimeoutInMinutes": 5,
+    "process": {
+      "phases": [
+        {
+          "steps": [
+            {
+              "environment": {},
+              "enabled": true,
+              "continueOnError": false,
+              "alwaysRun": false,
+              "displayName": "Install Dotnet sdk",
+              "timeoutInMinutes": 0,
+              "condition": "succeeded()",
+              "task": {
+                "id": "e213ff0f-5d5c-4791-802d-52ea3e7be1f1",
+                "versionSpec": "2.*",
+                "definitionType": "task"
+              },
+              "inputs": {
+                "targetType": "filePath",
+                "filePath": "scripts/InstallDotnetSdk.ps1",
+                "arguments": "",
+                "script": "# Write your powershell commands here.\n\nWrite-Host \"Hello World\"\n\n# Use the environment variables input below to pass secret variables to this script.",
+                "errorActionPreference": "stop",
+                "failOnStderr": "false",
+                "ignoreLASTEXITCODE": "false",
+                "workingDirectory": ""
+              }
+            },
+            {
+              "environment": {},
+              "enabled": true,
+              "continueOnError": false,
+              "alwaysRun": false,
+              "displayName": "Update dotnet path",
+              "timeoutInMinutes": 0,
+              "condition": "succeeded()",
+              "task": {
+                "id": "e213ff0f-5d5c-4791-802d-52ea3e7be1f1",
+                "versionSpec": "2.*",
+                "definitionType": "task"
+              },
+              "inputs": {
+                "targetType": "filePath",
+                "filePath": "scripts/UpdateDotnetSdkPath.ps1",
+                "arguments": "",
+                "script": "# Write your powershell commands here.\n\nWrite-Host \"Hello World\"\n\n# Use the environment variables input below to pass secret variables to this script.",
+                "errorActionPreference": "stop",
+                "failOnStderr": "false",
+                "ignoreLASTEXITCODE": "false",
+                "workingDirectory": ""
+              }
+            },
+            {
+              "environment": {},
+              "enabled": false,
+              "continueOnError": false,
+              "alwaysRun": false,
+              "displayName": "dotnet test",
+              "timeoutInMinutes": 0,
+              "condition": "succeeded()",
+              "task": {
+                "id": "5541a522-603c-47ad-91fc-a4b1d163081b",
+                "versionSpec": "2.*",
+                "definitionType": "task"
+              },
+              "inputs": {
+                "command": "test",
+                "publishWebProjects": "true",
+                "projects": "**/NETCoreSampleUnitTests/**/*.csproj",
+                "custom": "",
+                "arguments": "--collect \"Code Coverage\"",
+                "publishTestResults": "true",
+                "zipAfterPublish": "true",
+                "modifyOutputPath": "true",
+                "selectOrConfig": "select",
+                "feedRestore": "",
+                "includeNuGetOrg": "true",
+                "nugetConfigPath": "",
+                "externalEndpoints": "",
+                "noCache": "false",
+                "packagesDirectory": "",
+                "verbosityRestore": "Detailed",
+                "searchPatternPush": "$(Build.ArtifactStagingDirectory)/*.nupkg",
+                "nuGetFeedType": "internal",
+                "feedPublish": "",
+                "externalEndpoint": "",
+                "searchPatternPack": "**/*.csproj",
+                "configurationToPack": "$(BuildConfiguration)",
+                "outputDir": "$(Build.ArtifactStagingDirectory)",
+                "nobuild": "false",
+                "versioningScheme": "off",
+                "versionEnvVar": "",
+                "requestedMajorVersion": "1",
+                "requestedMinorVersion": "0",
+                "requestedPatchVersion": "0",
+                "buildProperties": "",
+                "verbosityPack": "Detailed",
+                "workingDirectory": ""
+              }
+            },
+            {
+              "environment": {},
+              "enabled": true,
+              "continueOnError": false,
+              "alwaysRun": false,
+              "displayName": "Publish Test Results **/*.trx",
+              "timeoutInMinutes": 0,
+              "condition": "succeeded()",
+              "task": {
+                "id": "0b0f01ed-7dde-43ff-9cbb-e48954daf9b1",
+                "versionSpec": "2.*",
+                "definitionType": "task"
+              },
+              "inputs": {
+                "testRunner": "VSTest",
+                "testResultsFiles": "**/*.trx",
+                "searchFolder": "$(System.DefaultWorkingDirectory)",
+                "mergeTestResults": "false",
+                "testRunTitle": "",
+                "platform": "",
+                "configuration": "",
+                "publishRunAttachments": "true"
+              }
+            }
+          ],
+          "name": "Phase 1",
+          "refName": "Phase_1",
+          "condition": "succeeded()",
+          "target": {
+            "executionOptions": {
+              "type": 0
+            },
+            "allowScriptsAuthAccessOption": false,
+            "type": 1
+          },
+          "jobAuthorizationScope": "projectCollection",
+          "jobCancelTimeoutInMinutes": 1
+        }
+      ],
+      "type": 1
+    },
+    "repository": {
+      "properties": {
+        "cleanOptions": "0",
+        "labelSources": "0",
+        "labelSourcesFormat": "$(build.buildNumber)",
+        "reportBuildStatus": "true",
+        "gitLfsSupport": "false",
+        "skipSyncSource": "false",
+        "checkoutNestedSubmodules": "false",
+        "fetchDepth": "0"
+      },
+      "id": "34d6224d-a23f-4124-8555-eefafb776fc0",
+      "type": "TfsGit",
+      "name": "samples",
+      "url": "https://samadala.visualstudio.com/samples/_git/samples",
+      "defaultBranch": "refs/heads/master",
+      "clean": "false",
+      "checkoutSubmodules": false
+    },
+    "processParameters": {},
+    "quality": 1,
+    "authoredBy": {
+      "displayName": "Satya Madala",
+      "url": "https://app.vssps.visualstudio.com/A7a6e1048-aa37-4fd4-bff4-5ac80beea13e/_apis/Identities/3af31f4d-4ce3-40e1-aa16-2a95650a3635",
+      "_links": {
+        "avatar": {
+          "href": "https://samadala.visualstudio.com/_apis/GraphProfile/MemberAvatars/aad.MGVkZDY3NTEtZGEzYS03NDgzLWE5MTUtNzRlZjBlZWJlOGVl"
+        }
+      },
+      "id": "3af31f4d-4ce3-40e1-aa16-2a95650a3635",
+      "uniqueName": "samadala@microsoft.com",
+      "imageUrl": "https://samadala.visualstudio.com/_api/_common/identityImage?id=3af31f4d-4ce3-40e1-aa16-2a95650a3635",
+      "descriptor": "aad.MGVkZDY3NTEtZGEzYS03NDgzLWE5MTUtNzRlZjBlZWJlOGVl"
+    },
+    "drafts": [],
+    "queue": {
+      "_links": {
+        "self": {
+          "href": "https://samadala.visualstudio.com/_apis/build/Queues/10"
+        }
+      },
+      "id": 10,
+      "name": "Hosted VS2017",
+      "url": "https://samadala.visualstudio.com/_apis/build/Queues/10",
+      "pool": {
+        "id": 4,
+        "name": "Hosted VS2017",
+        "isHosted": true
+      }
+    },
+    "id": 6,
+    "name": "samples-CI",
+    "url": "https://samadala.visualstudio.com/010f8b6f-710e-4f98-acf7-023f9f9510b8/_apis/build/Definitions/6?revision=5",
+    "uri": "vstfs:///Build/Definition/6",
+    "path": "\\",
+    "type": 2,
+    "queueStatus": 0,
+    "revision": 5,
+    "createdDate": "2018-08-03T09:17:20.383Z",
+    "project": {
+      "id": "010f8b6f-710e-4f98-acf7-023f9f9510b8",
+      "name": "samples",
+      "url": "https://samadala.visualstudio.com/_apis/projects/010f8b6f-710e-4f98-acf7-023f9f9510b8",
+      "state": "wellFormed",
+      "revision": 15,
+      "visibility": 0
+    }
+  }
